@@ -3,8 +3,6 @@ import Titles from "./Components/Titles";
 import Form from "./Components/Form";
 import Weather from "./Components/Weather";
 
-
-
 class App extends React.Component {
   state = {
     temperature: undefined,
@@ -40,7 +38,11 @@ class App extends React.Component {
         max_temp: data.main.temp_max,
         error: ""
       });
-    } else if (city === undefined || country === undefined || this.setState.temperature === undefined) {
+    } else if (
+      city === undefined ||
+      country === undefined ||
+      data.temp === undefined
+    ) {
       this.setState({
         temperature: undefined,
         city: undefined,
@@ -66,7 +68,6 @@ class App extends React.Component {
       });
     }
   };
-  
 
   render() {
     return (
