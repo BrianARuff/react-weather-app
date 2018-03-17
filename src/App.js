@@ -40,7 +40,7 @@ class App extends React.Component {
         max_temp: data.main.temp_max,
         error: ""
       });
-    } else if (city === undefined || country === undefined) {
+    } else if (city === undefined || country === undefined || this.setState.temperature === undefined) {
       this.setState({
         temperature: undefined,
         city: undefined,
