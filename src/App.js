@@ -2,7 +2,6 @@ import React from "react";
 import Titles from "./Components/Titles";
 import Form from "./Components/Form";
 import Weather from "./Components/Weather";
-import Credentials from './Components/Credentials';
 
 
 
@@ -20,6 +19,7 @@ class App extends React.Component {
   };
 
   getWeather = async e => {
+    const API_KEY = "b3cf48ace991ca96167230cd72414432";
     e.preventDefault();
     const city = e.target.elements.city.value;
     const country = e.target.elements.country.value;
@@ -54,6 +54,7 @@ class App extends React.Component {
       });
     }
   };
+  
 
   render() {
     return (
