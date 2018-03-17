@@ -41,7 +41,7 @@ class App extends React.Component {
     } else if (
       city === undefined ||
       country === undefined ||
-      data.temp === undefined
+      city.temp === undefined
     ) {
       this.setState({
         temperature: undefined,
