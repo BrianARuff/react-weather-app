@@ -20,7 +20,7 @@ const Weather = props => (
     {props.min_temp && (
       <p className='weather__key'>
         Minimum Temp:
-        <span className='weather__value'> {Math.round(9 / 5 * (props.min_temp - 273) + 32)}&deg;F}</span>
+        <span className='weather__value'> {Math.round(9 / 5 * (props.min_temp - 273) + 32)}&deg;F</span>
       </p>
     )}
 
