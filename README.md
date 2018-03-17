@@ -1,1 +1,1 @@
-    https://brianweatherapp.herokuapp.com/
+    http://brianweatherapp.herokuapp.com/
