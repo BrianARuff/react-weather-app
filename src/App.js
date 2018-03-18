@@ -39,9 +39,7 @@ class App extends React.Component {
         error: ""
       });
     } else if (
-      city === undefined ||
-      country === undefined ||
-      data.main.temp === undefined
+      city === undefined || country === undefined
     ) {
       this.setState({
         temperature: undefined,
